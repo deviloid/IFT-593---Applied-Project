@@ -12,25 +12,53 @@
 </head>
 
 <body>
-    <main id="main-holder">
-        <h1 id="signup-header">Sign Up</h1>
-
-        <div id="signup-error-msg-holder">
-            <p id="signup-error-msg">Passwords do not match!</p>
-        </div>
-
+    <div id="main">
         <form id="signup-form">
-            <input type="text" name="first-name" id="first-name-field" class="signup-form-field" placeholder="First Name">
-            <input type="text" name="last-name" id="password-field" class="signup-form-field" placeholder="Last Name">
-            <input type="text" name="email" id="email-field" class="signup-form-field" placeholder="abc@xyz.com">
-            <input type="text" name="username" id="username-field" class="signup-form-field" placeholder="Username">
-            <input type="text" name="profession" id="profession-field" class="signup-form-field" placeholder="Profession">
-            <input type="text" name="yoe" id="yoe-field" class="signup-form-field" placeholder="Years of Experience">
-            <input type="password" name="password" id="password-field" class="signup-form-field" placeholder="Password">
-            <input type="password" name="confirm-password" id="confirm-password-field" class="signup-form-field" placeholder="Confirm Password">
-            <input type="submit" value="Sign Up" id="signup-form-submit">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h1 id="signup-header">Sign Up</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size: 24pt;">s</td>
+                </tr>
+                <tr>
+                    <td id="signup-cell"><input type="text" name="first-name" id="first-name-field" class="signup-form-field"
+                            placeholder="First Name"></td>
+
+                    <td id="signup-cell"><input type="text" name="last-name" id="password-field" class="signup-form-field"
+                            placeholder="Last Name"></td>
+                </tr>
+                <tr>
+                    <td id="signup-cell"><input type="text" name="username" id="username-field" class="signup-form-field"
+                            placeholder="Username"></td>
+                    <td id="signup-cell"><input type="text" name="email" id="email-field" class="signup-form-field"
+                            placeholder="abc@xyz.com"></td>
+                </tr>
+                <tr>
+                    <td id="signup-cell"><input type="text" name="profession" id="profession-field" class="signup-form-field"
+                            placeholder="Profession"></td>
+                
+                    <td id="signup-cell"><input type="text" name="yoe" id="yoe-field" class="signup-form-field"
+                            placeholder="Years of Experience"></td>
+                </tr>
+                <tr>
+                    <td id="signup-cell"><input type="password" name="password" id="password-field" class="signup-form-field"
+                            placeholder="Password"></td>
+                
+                    <td id="signup-cell"><input type="password" name="confirm-password" id="confirm-password-field"
+                            class="signup-form-field" placeholder="Confirm Password"></td>
+                </tr>
+                <tr>
+                    <td id="signup-cell" colspan="2"><input type="submit" value="Sign Up" id="signup-form-submit"></td>
+                </tr>
+            </table>
         </form>
-    </main>
+    </div>
 </body>
+<div id="signup-error-msg-holder">
+    <p id="signup-error-msg">Passwords do not match!</p>
+</div>
 
 </html>
