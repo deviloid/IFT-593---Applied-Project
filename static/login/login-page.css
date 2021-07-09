@@ -7,15 +7,74 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
+    /* background-color: rgb(0, 0, 0); */
+    background: linear-gradient(270deg, #10679e, #037387, #039b82);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 18s ease infinite;
+    -moz-animation: AnimationName 18s ease infinite;
+    animation: AnimationName 18s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+#parent {
+    display: flex;
     justify-items: center;
     align-items: center;
-    background-color: rgb(0, 0, 0);
 }
 
 #main {
-    align-content: center;
+    display: flex;
+    justify-content: left;
     align-items: center;
-    /* display: grid; */
+    width: 40%;
+    background-image: url("../images/polaroid-image-container-small.png");
+    background-repeat: no-repeat;
+    padding: 1%;
+}
+
+#main0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    /* Grow to rest of container */
+    /* background: lightgreen; */
+    /* Just so it's visible */
 }
 
 #login-error-msg-holder {
@@ -75,7 +134,7 @@ body {
     outline: none;
     padding: 10px 10px;
     font-size: 20pt;
-    background-color: #000;
+    /* background-color: #000; */
 }
 
 #login-form-submit {
@@ -85,6 +144,42 @@ body {
     font-size: 20pt;
     margin-bottom: 10px;
     /* border-radius: 5px; */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: #000000;
+    cursor: pointer;
+    outline: none;
+}
+
+#login-form-submit:hover {
+    background-color: #4d4d4d;
+}
+
+input[type=text] {
+    place
+}
+
+input[type=text]::placeholder {
+    color: white;
+    background: transparent;
+}
+
+input[type=password]::placeholder { 
+    color: white;
+    background: transparent;
+}
+
+input[type=password] {
+    color: white;
+    background: transparent;
+}
+
+#redirect-button {
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    font-size: 20pt;
+    margin-bottom: 10px;
     color: rgb(0, 0, 0);
     font-weight: bold;
     background-color: #ffffff;
@@ -92,22 +187,14 @@ body {
     outline: none;
 }
 
-#login-form-submit:hover {
+#redirect-button:hover {
     background-color: #d1d1d1;
 }
 
-input[type=text] {
-    color: white;
+#logo {
+    width: 50%;
 }
 
-input[type=text]::placeholder {
-    color: white;
-}
-
-input[type=password]::placeholder {
-    color: white;
-}
-
-input[type=password] {
-    color: white;
+.form-login {
+    padding: 20px 34.5px 135px 34.5px;
 }

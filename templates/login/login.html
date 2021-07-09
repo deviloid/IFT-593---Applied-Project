@@ -7,38 +7,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="shortcut icon" type="image/png" href="{% static '/images/avion-favicon.png' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static '/login/login-page.css' %}">
     <script defer src="{% static '/login/login-page.js' %}"></script>
 </head>
 
-<body>
-    <div id="main">
-        <form id="login-form">
-            <table>
-                <tr>
-                    <td>
-                        <h1 id="login-header">Login</h1>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="text" name="username" id="username-field" class="login-form-field"
-                            placeholder="Username"></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="password" name="password" id="password-field" class="login-form-field"
-                            placeholder="Password"></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="submit" value="Login" id="login-form-submit"></td>
-                </tr>
-                <tr>
-                    <td align="center"><h1 id="login-header-2">New User?</h1></td>
-                    <td><input type="submit" value="Sign Up" id="login-form-submit"></td>
-                </tr>
-            </table>
-        </form>
-        <div id="login-error-msg-holder">
-            <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+<body id="body">
+    <div id="parent">
+        <div id="main0">
+            <img src="{% static '/images/avion.png' %}" id="logo">
+        </div>
+        <div id="main">
+            <form id="login-form">
+                <table class="form-login">
+                    <tr>
+                        <td>
+                            <h1 id="login-header">Login</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="text" name="username" id="username-field" class="login-form-field"
+                                placeholder="Username"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="password" name="password" id="password-field"
+                                class="login-form-field" placeholder="Password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Login" id="login-form-submit"></td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <h1 id="login-header-2">New User?</h1>
+                        </td>
+                        <td><button id="redirect-button">Sign Up</button></td>
+                    </tr>
+                </table>
+            </form>
+            <!-- <div id="login-error-msg-holder">
+                <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+            </div> -->
         </div>
     </div>
 </body>

@@ -7,58 +7,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="shortcut icon" type="image/png" href="{% static '/images/avion-favicon.png' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static '/signup/signup.css' %}">
-    <script defer src="{% static '/signup/signup.js' %}"></script>
+    <script src="{% static '/signup/signup.js' %}"></script>
 </head>
 
 <body>
-    <div id="main">
-        <form id="signup-form">
-            <table>
-                <tr>
-                    <td colspan="2">
-                        <h1 id="signup-header">Sign Up</h1>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="font-size: 24pt;">s</td>
-                </tr>
-                <tr>
-                    <td id="signup-cell"><input type="text" name="first-name" id="first-name-field" class="signup-form-field"
-                            placeholder="First Name"></td>
+    <div id="parent">
+        <div id="main0">
+            <img src="{% static '/images/avion.png' %}" id="logo">
+        </div>
+        <div id="main">
+            <form id="signup-form">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <h1 id="signup-header">Sign Up</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="font-size: 24pt;"></td>
+                    </tr>
+                    <tr>
+                        <td id="signup-cell"><input type="text" name="first-name" id="first-name-field"
+                                class="signup-form-field" placeholder="First Name"></td>
 
-                    <td id="signup-cell"><input type="text" name="last-name" id="password-field" class="signup-form-field"
-                            placeholder="Last Name"></td>
-                </tr>
-                <tr>
-                    <td id="signup-cell"><input type="text" name="username" id="username-field" class="signup-form-field"
-                            placeholder="Username"></td>
-                    <td id="signup-cell"><input type="text" name="email" id="email-field" class="signup-form-field"
-                            placeholder="abc@xyz.com"></td>
-                </tr>
-                <tr>
-                    <td id="signup-cell"><input type="text" name="profession" id="profession-field" class="signup-form-field"
-                            placeholder="Profession"></td>
-                
-                    <td id="signup-cell"><input type="text" name="yoe" id="yoe-field" class="signup-form-field"
-                            placeholder="Years of Experience"></td>
-                </tr>
-                <tr>
-                    <td id="signup-cell"><input type="password" name="password" id="password-field" class="signup-form-field"
-                            placeholder="Password"></td>
-                
-                    <td id="signup-cell"><input type="password" name="confirm-password" id="confirm-password-field"
-                            class="signup-form-field" placeholder="Confirm Password"></td>
-                </tr>
-                <tr>
-                    <td id="signup-cell" colspan="2"><input type="submit" value="Sign Up" id="signup-form-submit"></td>
-                </tr>
-            </table>
-        </form>
+                        <td id="signup-cell"><input type="text" name="last-name" id="password-field"
+                                class="signup-form-field" placeholder="Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td id="signup-cell"><input type="text" name="username" id="username-field"
+                                class="signup-form-field" placeholder="Username"></td>
+                        <td id="signup-cell"><input type="text" name="email" id="email-field" class="signup-form-field"
+                                placeholder="abc@xyz.com"></td>
+                    </tr>
+                    <tr>
+                        <td id="signup-cell"><input type="text" name="profession" id="profession-field"
+                                class="signup-form-field" placeholder="Profession"></td>
+
+                        <td id="signup-cell"><input type="text" name="yoe" id="yoe-field" class="signup-form-field"
+                                placeholder="Years of Experience"></td>
+                    </tr>
+                    <tr>
+                        <td id="signup-cell"><input type="password" name="password" id="password-field"
+                                class="signup-form-field" placeholder="Password"></td>
+
+                        <td id="signup-cell"><input type="password" name="confirm-password" id="confirm-password-field"
+                                class="signup-form-field" placeholder="Confirm Password"></td>
+                    </tr>
+                    <tr>
+                        <td id="signup-cell" colspan="2"><input type="submit" value="Sign Up" id="signup-form-submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </div>
 </body>
-<div id="signup-error-msg-holder">
+<!-- <div id="signup-error-msg-holder">
     <p id="signup-error-msg">Passwords do not match!</p>
-</div>
+</div> -->
 
 </html>
